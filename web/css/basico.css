@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+}
+header, footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+.artigo-card {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.artigo-card img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.artigo-card .info {
+    padding: 15px;
+    flex: 1;
+}
+.artigo-card h2 {
+    margin-top: 0;
+}
+.stats {
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
+}
+.stats span {
+    margin: 0 5px;
+}

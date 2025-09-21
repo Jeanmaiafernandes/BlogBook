@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universo Paralelo</title>
+<link rel="stylesheet" href="css/basico.css">
+</head>
+<body>
+
+<header>
+    <h1>Universo Paralelo</h1>
+    <p>Últimos artigos</p>
+</header>
+
+<main class="container">
+    <section class="artigo-card" data-id="1">
+        <img src="html/Velolo.jpeg" alt="Imagem do Artigo 1">
+        <div class="info">
+            <h2><a href="html/artigo1.html" onclick="incrementViews(1)">A Verdade sobre os Velociraptors</a></h2>
+            <p>O famoso Velociraptor do cinema não é exatamente o que a ciência revela.
+            O verdadeiro animal escondia características surpreendentes — de tamanho, aparência e comportamento — que podem mudar tudo o que você imagina sobre esse “caçador lendário”.
+            Quer descobrir quais são esses segredos?</p>
+            <div class="stats">
+                Visualizações <span id="views-1">0</span> |
+                Comentários <span id="comments-1">0</span> |
+                Favoritos <span id="favs-1">0</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="artigo-card" data-id="2">
+        <img src="html/Gurgel.jpg" alt="Imagem do Artigo 2">
+        <div class="info">
+            <h2><a href="html/artigo2.html" onclick="incrementViews(2)">O Porque não Temos carros 100% Brs?</a></h2>
+            <p>A Gurgel não foi “só mais uma montadora” brasileira.
+            Por trás de seus carros compactos e projetos ousados, há histórias de inovação, coragem e reviravoltas que poucas pessoas conhecem.
+            Quer saber como uma marca nacional desafiou gigantes e ainda guarda mistérios que surpreendem até hoje?</p>
+            <div class="stats">
+                Visualizações <span id="views-2">0</span> |
+                Comentários <span id="comments-2">0</span> |
+                Favoritos <span id="favs-2">0</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>&copy; 2025 Universo Paralelo</footer>
+
+<script src="javascript/contadores.js"></script>
+</body>
+</html>
