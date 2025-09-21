@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.Usuario;
+import dao.UsuarioDAO;
 /**
  *
  * @author jeanm
@@ -43,13 +44,26 @@ public class CadastroUsuarioServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-        throws ServletException, IOException {
-            String nomeCompleto = request.getParameter("nomeCompleto");
-            String nomeUsuario = request.getParameter("nomeUsuario");
-            String senha = request.getParameter("senha");
-            String temaFavorito = request.getParameter("temaFavorito");
-            String idadeStr = request.getParameter("idade");
-            String local = request.getParameter("local");
+            throws ServletException, IOException {
+
+        String nomeCompleto = request.getParameter("nomeCompleto");
+        String nomeUsuario = request.getParameter("nomeUsuario");
+        String senha = request.getParameter("senha");
+        String temaFavorito = request.getParameter("temaFavorito");
+        String idadeStr = request.getParameter("idade");
+        String local = request.getParameter("local");
+
+        Integer idade = (idadeStr != null && !idadeStr.isEmpty()) ? Integer.parseInt(idadeStr) : null;
+
+        // cria objeto Usuario
+        Usuario usuario = new Usuario(nomeCompleto, nomeUsuario, senha, temaFavorito, idade, local);
+
+        
+        UsuarioDAO dao = new UsuarioDAO();
+        dao.inserir(usuario);
+
+        // falta inclementar a pagina de sucesso
+        response.sendRedirect("sucesso.jsp");
     }
 
     @Override
