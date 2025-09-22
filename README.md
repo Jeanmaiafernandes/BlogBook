@@ -43,15 +43,12 @@ Para rodar este projeto em seu ambiente local, siga os passos abaixo:
     * Faça o "Clean and Build" do projeto.
     * Execute o projeto ("Run"). O NetBeans fará o deploy no servidor Tomcat e abrirá a aplicação no seu navegador.
 
-## 👥 Equipe
-
-Este projeto foi desenvolvido por:
 
 ## 👥 Equipe
 
 Este projeto foi desenvolvido por:
 
-* [cite_start]Jéssica Letícia Barbosa de Souza [cite: 391]
-* [cite_start]Jean Carlos Maia Fernandes [cite: 392]
-* [cite_start]Nícolas Birche Ferri Barbosa [cite: 393]
-* [cite_start]Victor Guimarães Felipe [cite: 394]
+* Jéssica Letícia Barbosa de Souza
+* Jean Carlos Maia Fernandes
+* Nícolas Birche Ferri Barbosa
+* Victor Guimarães Felipe
