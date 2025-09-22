@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS MySQL;
+
+USE MySQL;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome_completo VARCHAR(255) NOT NULL,
+    nome_usuario VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(100) NOT NULL,
+    tema_favorito VARCHAR(150),
+    idade INT,
+    local VARCHAR(150)
+);
