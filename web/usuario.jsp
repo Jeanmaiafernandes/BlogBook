@@ -1,32 +1,47 @@
-<%-- 
-    Document   : Controle de acesso - senha
-    Created on : 18 de ago. de 2025, 20:08:49
-    Author     : Nícolas & Jéssica
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Acesso</title>
-    </head>
-    <body>
-        <h1>Entre com o Login!</h1>
-        <%
-            //Enter
-            
-            // uso = Parâmetro 1
-            String usu = request.getParameter("usuario");
-            // sen = Parâmetro 2
-            String sen = request.getParameter("senha");
-            
-            if (usu.equals("EternoMadruguinha88") && sen.equals("FimEraL44")){
-                out.println(usu + "<br>Senha correta! Acesso Liberado!");
-            }else{
-                out.println(usu + "<br>Acesso Negado! Vaza daqui gente ruim!");
-            }
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro - Universo Paralelo</title>
+<%-- Assumindo que o estilo do seu formulário está em popup.css --%>
+<link rel="stylesheet" href="css/popup.css"> 
+</head>
+<body>
+<header>
+    <h1>Cadastro de Leitor</h1>
+</header>
 
-        %>
-    </body>
+<main>
+    <%-- Form agora aponta para o Servlet de Cadastro --%>
+    <form class="cadastro" action="CadastroUsuarioServlet" method="post">
+        <label>Nome completo *</label>
+        <input type="text" name="nomeCompleto" required>
+
+        <label>Nome de usuário *</label>
+        <input type="text" name="nomeUsuario" required>
+            
+        <label> Senha *</label>
+        <input type="password" name="senha" required>
+        
+        <label> Confirmação de Senha *</label>
+        <%-- O backend não valida este campo ainda, mas o mantemos na interface --%>
+        <input type="password" name="confirmacaoSenha" required>
+
+        <label>Temas favoritos *</label>
+        <textarea name="temaFavorito" required></textarea>
+
+        <label>Idade (opcional)</label>
+        <input type="number" name="idade" min="0">
+
+        <label>Local (opcional)</label>
+        <input type="text" name="local">
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</main>
+
+<footer>&copy; 2025 Universo Paralelo</footer>
+</body>
 </html>
