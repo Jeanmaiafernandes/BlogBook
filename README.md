@@ -47,7 +47,11 @@ Para rodar este projeto em seu ambiente local, siga os passos abaixo:
 
 Este projeto foi desenvolvido por:
 
-* [cite_start]Jéssica Letícia Barbosa de Souza [cite: 449]
-* [cite_start]Jean Carlos Maia Fernandes [cite: 450]
-* [cite_start]Nícolas Birche Ferri Barbosa [cite: 451]
-* [cite_start]Victor Guimarães Felipe [cite: 452]
+## 👥 Equipe
+
+Este projeto foi desenvolvido por:
+
+* [cite_start]Jéssica Letícia Barbosa de Souza [cite: 391]
+* [cite_start]Jean Carlos Maia Fernandes [cite: 392]
+* [cite_start]Nícolas Birche Ferri Barbosa [cite: 393]
+* [cite_start]Victor Guimarães Felipe [cite: 394]
