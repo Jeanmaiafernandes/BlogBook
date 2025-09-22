@@ -51,7 +51,7 @@ public class CadastroUsuarioServlet extends HttpServlet {
             System.out.println("Redirecionado para sucesso.jsp");
 
         } catch (Exception e) {
-            // Se qualquer erro acontecer, ele será impresso aqui!
+            // Se qualquer erro acontecer, ele será impresso aqui!!!
             System.out.println("!!! OCORREU UM ERRO NO SERVLET DE CADASTRO !!!");
             e.printStackTrace();
         }
